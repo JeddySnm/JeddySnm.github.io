@@ -148,20 +148,26 @@ body{
 }
 
 #menu{
-    display: block;
+    display: none;
     width: 150px;
     position: absolute;    
-    top: 15%;
-    left: 70%;
+    top: 18%;
+    left: 73%;
     transform: translate(-50%, -50%);
-    border: yellow solid 5px;
     padding-left: 0px;
     margin: 0%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
 }
 #menu li{
     list-style: none;
     display: flex;
     text-align: left;
-    width: 100px;
+    width: 150px;
     margin-left: -15%;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 5px;
 }
