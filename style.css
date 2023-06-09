@@ -1,0 +1,167 @@
+body{
+    background-color: rgb(43, 43, 43);
+}
+
+#contenedorMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: #55555500;
+    color: #fff;
+ 
+}
+
+#storieSeccion{
+    position: relative;
+    width: 350px;
+    height: 650px;
+    background-color: #3d3d3d;
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#preview {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    
+}
+#imagenOriginal {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    
+}
+
+#imagenCentrada{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /*border: rgb(255, 0, 217) solid 10px;*/
+    justify-content: center;
+    align-items: center;
+    flex-basis: 80%;
+      background-color: #e1e1e100;
+    border: none;
+}
+
+#recurso{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: #555;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+#recurso:hover {
+    background-color: #e0e0e0;
+  }
+  
+#recurso:focus {
+    outline: none;
+    box-shadow: 0 0 5px #99c0ff;
+  }
+
+#toolbar{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    border: rgba(255, 255, 0, 0) solid 5px;
+    flex-basis: 10%;
+    background-color: #7ed98600;
+
+}
+
+.circulo {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 2px;
+}
+
+
+#backBoton {
+
+}
+
+#backBotonSec{
+    flex-basis: 46%;
+    background-color: #cf212100;
+    padding-left: 15px;
+    padding-top: 15px;
+
+}
+
+#othersBotonSec{
+    flex-basis: 45%;
+    background-color: #bdf55600;
+    padding: 5px;
+    padding-top: 15px;
+}
+
+#trash{
+    flex-basis: 15%;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(71,231,255,0) 0%, rgba(0, 0, 0, 0.495) 83%);
+    border: none;
+}
+
+#trashBoton{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.599);
+    margin-right: 2px;
+    position: relative;
+      top: -20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.icon{
+    position: relative;
+    width: 30px;
+}
+#icon{
+    position: relative;
+    width: 22px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#menu{
+    display: block;
+    width: 150px;
+    position: absolute;    
+    top: 15%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border: yellow solid 5px;
+    padding-left: 0px;
+    margin: 0%;
+}
+#menu li{
+    list-style: none;
+    display: flex;
+    text-align: left;
+    width: 100px;
+    margin-left: -15%;
+}
