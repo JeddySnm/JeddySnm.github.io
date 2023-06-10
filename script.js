@@ -7,7 +7,7 @@ function mostrarImagen(event) {
         imagen.style.display = 'inline'; 
         URL.revokeObjectURL(imagen.src);
         recurso.style.display = 'none';
-
+        trash.style.display = 'block';
         aplicarFiltroYFondo(imagen);
     }
   }
@@ -34,6 +34,14 @@ function mostrarImagen(event) {
     } else {
       menu.style.display = 'none'; // Ocultar el menú si está visible
     }
+  }
+
+  function eliminarImagen(){
+    preview.style.display = 'none';
+    recurso.style.display = 'block';
+    var seccion = document.getElementById('storieSeccion');
+    seccion.style.backgroundImage = 'none';
+    trash.style.display = 'none';
   }
 
   function mostrarMenuTransformar(){}

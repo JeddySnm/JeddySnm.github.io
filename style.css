@@ -34,15 +34,15 @@ body{
     display: none;
     max-width: 100%;
     max-height: 100%;
-    position: relative;
-    
+    min-width: 100%;
+    position: relative;    
 }
+
 #imagenOriginal {
     display: none;
     max-width: 100%;
     max-height: 100%;
     position: relative;
-    
 }
 
 #imagenCentrada{
@@ -65,16 +65,16 @@ body{
     color: #555;
     font-size: 16px;
     font-family: Arial, sans-serif;
-  }
+}
   
 #recurso:hover {
     background-color: #e0e0e0;
-  }
+}
   
 #recurso:focus {
     outline: none;
     box-shadow: 0 0 5px #99c0ff;
-  }
+}
 
 #toolbar{
     display: flex;
@@ -93,6 +93,7 @@ body{
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.5);
     margin-right: 2px;
+    cursor: pointer;
 }
 
 
@@ -116,16 +117,19 @@ body{
 }
 
 #trash{
+    display: none;
+    z-index: 3;
     flex-basis: 15%;
     justify-content: center;
     background: linear-gradient(180deg, rgba(71,231,255,0) 0%, rgba(0, 0, 0, 0.495) 83%);
     border: none;
+    cursor: pointer;
 }
 
 #trashBoton{
     display: inline-block;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.599);
     margin-right: 2px;
@@ -133,12 +137,21 @@ body{
       top: -20%;
       left: 50%;
       transform: translate(-50%, -50%);
+
 }
 
 .icon{
     position: relative;
     width: 30px;
+    padding-left: 2px;
+    padding-top: 2px;
 }
+
+#icon2{
+    position: relative;
+    width: 30px;
+}
+
 #icon{
     position: relative;
     width: 22px;
@@ -151,23 +164,31 @@ body{
     display: none;
     width: 150px;
     position: absolute;    
-    top: 18%;
+    top: 17%;
     left: 73%;
     transform: translate(-50%, -50%);
     padding-left: 0px;
     margin: 0%;
-
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     text-align: center;
 }
-#menu li{
-    list-style: none;
-    display: flex;
+#menu ul{
+    margin: 10px;
     text-align: left;
-    width: 150px;
-    margin-left: -15%;
-    font-size: 15px;
-    padding-top: 10px;
-    padding-left: 5px;
+    padding: 0;
+}
+#menu li{
+    display: inline-block;
+    width: 102px;
+    margin: 2px;
+    border: rgba(255, 255, 0, 0) solid 2px;
+    padding-left:20px;
+    border-radius: 5px;
+}
+
+#menu li:hover{
+    background-color: #f8f8f83a;
+    cursor: pointer;
 }
